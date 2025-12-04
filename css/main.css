@@ -1384,7 +1384,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #c296ff;
+  background: #c12dff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2862,42 +2862,62 @@ h6 {
   background: transparent;
   box-shadow: none;
   padding: 0;
+  border: none !important;
+}
+.site-meta {
+  background: transparent !important;
+}
+.brand {
+  background: transparent !important;
+  padding: 0 !important;
 }
 .site-title {
   font-size: 1.2em;
   font-weight: 600;
   color: #37352f !important;
-  border-bottom: none;
+  border-bottom: none !important;
 }
 .site-title:hover {
-  border-bottom: none;
+  border-bottom: none !important;
+}
+/* Remove the specific lines above/below title in NexT */
+.logo-line-before,
+.logo-line-after,
+.logo-line {
+  display: none !important;
 }
 .menu {
   margin-top: 10px;
   text-align: right;
+  background: transparent !important;
 }
 .menu-item a {
   font-size: 14px;
-  color: #37352f;
+  color: #37352f !important;
   padding: 5px 10px;
 }
 .menu-item-active a {
-  background: #efefef; /* Light gray selection */
+  background: #efefef !important; /* Light gray selection */
   border-radius: 3px;
-  color: #37352f;
+  color: #37352f !important;
+}
+.menu-item a:hover {
+  background: #efefef !important;
+  color: #37352f !important;
 }
 .sidebar {
-  display: none; /* Notion usually doesn't have a right sidebar for public pages */
+  display: none !important; /* Notion usually doesn't have a right sidebar for public pages */
 }
 .sidebar-toggle {
-  display: none;
+  display: none !important;
 }
 .footer {
   color: #888;
   font-size: 0.9em;
   margin-top: 40px;
-  border-top: 1px solid #e0e0e0; /* Keep top border for footer separation? User said title lines, maybe this is fine */
+  border-top: 1px solid #e0e0e0;
   padding-top: 20px;
+  background: #fff !important;
 }
 .footer-inner {
   width: 100%;
@@ -2905,6 +2925,7 @@ h6 {
   margin: 0 auto;
   padding: 0 20px;
   text-align: left;
+  box-sizing: border-box;
 }
 a {
   color: #37352f;
