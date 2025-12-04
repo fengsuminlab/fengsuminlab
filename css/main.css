@@ -1221,7 +1221,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #db8f7a;
+  background: #bed759;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2626,4 +2626,8 @@ code,
 pre,
 .highlight {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+.header,
+.header-inner {
+  background: #fff;
 }
