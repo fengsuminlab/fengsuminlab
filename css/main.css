@@ -1185,6 +1185,37 @@ pre code {
 .use-motion .menu-item {
   visibility: hidden;
 }
+.header-inner {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  width: 100%;
+}
+.site-brand-container {
+  flex-grow: 0;
+  margin-right: auto; /* Pushes everything else to the right if needed, but space-between handles it */
+}
+.site-nav {
+  display: block !important; /* Ensure it's visible */
+}
+.menu {
+  display: flex !important;
+  align-items: center;
+  margin: 0 !important;
+}
+.menu-item-contact a {
+  background-color: #000 !important;
+  color: #fff !important;
+  font-weight: 500 !important;
+  border-radius: 6px !important;
+  padding: 6px 12px !important;
+  transition: opacity 0.2s ease;
+  line-height: normal !important;
+}
+.menu-item-contact a:hover {
+  background-color: #333 !important;
+  opacity: 0.9;
+}
 .sidebar {
   left: -320px;
 }
@@ -1223,7 +1254,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #aa8c9a;
+  background: #e8374e;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
