@@ -1163,8 +1163,7 @@ pre code {
   font-size: 0.8125em;
   transition: border-color 0.2s ease-in-out;
 }
-.menu-item a:hover,
-.menu-item a.menu-item-active {
+.menu-item a:hover {
   background: var(--menu-item-bg-color);
 }
 .menu-item i[class^='fa'] {
@@ -1221,7 +1220,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #d4c2bb;
+  background: #e27d3d;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
