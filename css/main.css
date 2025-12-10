@@ -1191,27 +1191,33 @@ pre code {
   align-items: center !important;
   width: 100%;
 }
-.site-brand-container {
-  flex-grow: 0;
-  margin-right: 0 !important;
-/* Ensure logo stays on the left */
-}
 .site-nav {
   display: block !important;
-  flex-grow: 1; /* Allow nav to take remaining space */
-  margin-left: 20px; /* Optional spacing from title */
+  position: absolute !important; /* Take out of flow for true centering */
+  width: 100%;
+  left: 0;
+  top: 50%; /* Vertically center */
+  transform: translateY(-50%);
+  pointer-events: none; /* Allow clicks to pass through to Logo if needed */
+  z-index: 10;
 }
 .menu {
   display: flex !important;
   align-items: center;
-  justify-content: center; /* Center the main menu items */
+  justify-content: center; /* Center the main menu items relative to the page */
   margin: 0 !important;
-  position: relative; /* Anchor for absolute positioning */
+  position: relative; /* Anchor for absolute positioning of contact */
   width: 100%;
+  padding: 0 40px; /* Match header padding to ensure right alignment aligns with edge */
+  box-sizing: border-box;
+}
+.menu-item {
+  pointer-events: auto; /* Re-enable clicks on links */
 }
 .menu-item-contact {
   position: absolute !important;
-  right: 0 !important; /* Pin to the far right */
+  right: 0 !important; /* Pin to the far right of the content area */
+  pointer-events: auto;
 }
 .menu-item-contact a {
   background-color: #000 !important;
@@ -1286,7 +1292,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #f239c6;
+  background: #ff67ff;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
