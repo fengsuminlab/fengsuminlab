@@ -1216,7 +1216,7 @@ pre code {
 }
 .menu-item-contact {
   position: absolute !important;
-  right: 0 !important; /* Pin to the far right of the content area */
+  right: 40px !important; /* Match header padding of 40px */
   pointer-events: auto;
 }
 .menu-item-contact a {
@@ -1292,7 +1292,7 @@ pre code {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ff67ff;
+  background: #526c40;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
